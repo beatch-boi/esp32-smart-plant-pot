@@ -1,0 +1,40 @@
+{
+    "presets": [
+        {
+            "name": "Малина",
+            "time-on": "08:00",
+            "time-off": "18:00",
+            "brightness": "75"
+        },
+        {
+            "name": "Клубника",
+            "time-on": "09:30",
+            "time-off": "19:30",
+            "brightness": "50"
+        },
+        {
+            "name": "Фиалки",
+            "time-on": "10:00",
+            "time-off": "23:00",
+            "brightness": "100"
+        },
+        {
+            "name": "Перец",
+            "time-on": "09:00",
+            "time-off": "17:00",
+            "brightness": "75"
+        },
+        {
+            "name": "Мята",
+            "time-on": "07:00",
+            "time-off": "18:00",
+            "brightness": "65"
+        },
+        {
+            "name": "Томаты",
+            "time-on": "10:00",
+            "time-off": "22:00",
+            "brightness": "95"
+        }
+    ]
+}

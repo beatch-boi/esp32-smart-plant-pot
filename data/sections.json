@@ -1,0 +1,28 @@
+{
+    "sections": [
+        {
+            "name": "-",
+            "timer": "notSet",
+            "status": "off",
+            "timeOn": "00:00",
+            "timeOff": "00:00",
+            "brightness": 0
+        },
+        {
+            "name": "-",
+            "timer": "notSet",
+            "status": "off",
+            "timeOn": "00:00",
+            "timeOff": "00:00",
+            "brightness": 0
+        },
+        {
+            "name": "-",
+            "timer": "notSet",
+            "status": "off",
+            "timeOn": "00:00",
+            "timeOff": "00:00",
+            "brightness": 0
+        }
+    ]
+}

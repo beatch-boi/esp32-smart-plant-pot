@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/css/base-min.css">
+    <link rel="stylesheet" href="/css/grids-min.css">
+    <link rel="stylesheet" href="/css/buttons-min.css">
+    <link rel="stylesheet" href="/css/grids-responsive-min.css">
+</head>
+
+<body style="font-family: sans-serif; color: #333;">
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <main class="pure-g">
+            <div style="margin: 10px;"></div>
+            <div class="pure-u-1-1">
+                <header style="display: flex; justify-content: center;">
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+                        <hr width="30px">
+                        <p style="margin: 0px; padding: 0px; font-weight: bolder;">Влажность воздуха: <span
+                                id="humidity">45</span>%
+                        </p>
+                        <hr width="30px">
+                        <p style="margin: 0px; padding: 0px; font-weight: bolder;">Температура воздуха: <span
+                                id="temperature">25</span>&deg;C</p>
+                        <hr width="30px">
+                        <p id="water-level" style="margin: 0px; padding: 0px; font-weight: bolder;">Уровень воды в норме
+                        </p>
+                        <hr width="30px">
+                    </div>
+                </header>
+            </div>
+
+            <div style="margin: 10px;"></div>
+            <div class="pure-u-1-1">
+                <div
+                    style="margin: auto; max-width: 800px;  border: 1px solid #CCC; background-color: #F9F9F9; border-radius: 5px; padding-bottom: 10px;">
+                    <header>
+                        <div style="display: flex; margin-top: 10px;">
+                            <img id="heart-1" src="/img/heart.svg" width="20px" height="auto"
+                                style="margin-left: 10px; cursor: pointer;">
+                            <hr width="10%" style="margin-left: 10px; margin-right: 10px;">
+                            <p style="margin: 0px; font-weight: bolder; margin-right: 5px;">Статус:</p>
+                            <p id="status-1" style="margin: 0px; font-weight: bolder;">Активен</p>
+                            <hr width="100%" style="margin-left: 10px; margin-right: 10px;">
+                            <img id="icon-1" src="/img/wishlist-heart.svg" width="25px" height="auto"
+                                style="margin-right: 10px; cursor: pointer;">
+                        </div>
+                    </header>
+                    <h2 id="name-1" style="text-align: center; margin-left: 10px; margin-right: 10px;"
+                        contenteditable="true">Секция №1</h2>
+                    <div
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px;">
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <label for="time-on-1" style="font-weight: bolder;">Время включения:</label>
+                            <input type="time" id="time-on-1" value="00:00" pattern="[0-2][0-9]:[0-5][0-9]"
+                                style="background-color: transparent; border: none; font-weight: bolder; cursor: pointer">
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <label for="time-off-1" style="font-weight: bolder;">Время выключения:</label>
+                            <input type="time" id="time-off-1" value="00:00" pattern="[0-2][0-9]:[0-5][0-9]"
+                                style="background-color: transparent; border: none; font-weight: bolder; cursor: pointer">
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <label for="brightness-1" style="font-weight: bolder;">Яркость:</label>
+                            <input type="range" id="brightness-1"
+                                style="background-color: transparent; border: none; font-weight: bolder; cursor: pointer">
+                            <p style="margin: 0px; padding: 0px; font-weight: bolder;"><span
+                                    id="brightness-1-value">50</span>%</p>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <button id="submit-1" class="pure-button button-success">Подтвердить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 10px;"></div>
+            <div class="pure-u-1-1">
+                <div
+                    style="margin: auto; max-width: 800px;  border: 1px solid #CCC; background-color: #F9F9F9; border-radius: 5px; padding-bottom: 10px;">
+                    <header>
+                        <div style="display: flex; margin-top: 10px;">
+                            <img id="heart-2" src="/img/heart.svg" width="20px" height="auto"
+                                style="margin-left: 10px; cursor: pointer;">
+                            <hr width="10%" style="margin-left: 10px; margin-right: 10px;">
+                            <p style="margin: 0px; font-weight: bolder; margin-right: 5px;">Статус:</p>
+                            <p id="status-2" style="margin: 0px; font-weight: bolder;">Активен</p>
+                            <hr width="100%" style="margin-left: 10px; margin-right: 10px;">
+                            <img id="icon-2" src="/img/wishlist-heart.svg" width="25px" height="auto"
+                                style="margin-right: 10px; cursor: pointer;">
+                        </div>
+                    </header>
+                    <h2 id="name-2" style="text-align: center; margin-left: 10px; margin-right: 10px;"
+                        contenteditable="true">Секция №2</h2>
+                    <div
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px;">
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <label for="time-on-2" style="font-weight: bolder;">Время включения:</label>
+                            <input type="time" id="time-on-2" value="00:00" pattern="[0-2][0-9]:[0-5][0-9]"
+                                style="background-color: transparent; border: none; font-weight: bolder; cursor: pointer">
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <label for="time-off-2" style="font-weight: bolder;">Время выключения:</label>
+                            <input type="time" id="time-off-2" value="00:00" pattern="[0-2][0-9]:[0-5][0-9]"
+                                style="background-color: transparent; border: none; font-weight: bolder; cursor: pointer">
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <label for="brightness-2" style="font-weight: bolder;">Яркость:</label>
+                            <input type="range" id="brightness-2"
+                                style="background-color: transparent; border: none; font-weight: bolder; cursor: pointer">
+                            <p style="margin: 0px; padding: 0px; font-weight: bolder;"><span
+                                    id="brightness-2-value">50</span>%</p>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <button id="submit-2" class="pure-button button-success">Подтвердить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: 10px;"></div>
+            <div class="pure-u-1-1">
+                <div
+                    style="margin: auto; max-width: 800px;  border: 1px solid #CCC; background-color: #F9F9F9; border-radius: 5px; padding-bottom: 10px;">
+                    <header>
+                        <div style="display: flex; margin-top: 10px;">
+                            <img id="heart-3" src="/img/heart.svg" width="20px" height="auto"
+                                style="margin-left: 10px; cursor: pointer;">
+                            <hr width="10%" style="margin-left: 10px; margin-right: 10px;">
+                            <p style="margin: 0px; font-weight: bolder; margin-right: 5px;">Статус:</p>
+                            <p id="status-3" style="margin: 0px; font-weight: bolder;">Активен</p>
+                            <hr width="100%" style="margin-left: 10px; margin-right: 10px;">
+                            <img id="icon-3" src="/img/wishlist-heart.svg" width="25px" height="auto"
+                                style="margin-right: 10px; cursor: pointer;">
+                        </div>
+                    </header>
+                    <h2 id="name-3" style="text-align: center; margin-left: 10px; margin-right: 10px;"
+                        contenteditable="true">Секция №3</h2>
+                    <div
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px;">
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <label for="time-on-3" style="font-weight: bolder;">Время включения:</label>
+                            <input type="time" id="time-on-3" value="00:00" pattern="[0-2][0-9]:[0-5][0-9]"
+                                style="background-color: transparent; border: none; font-weight: bolder; cursor: pointer">
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <label for="time-off-3" style="font-weight: bolder;">Время выключения:</label>
+                            <input type="time" id="time-off-3" value="00:00" pattern="[0-2][0-9]:[0-5][0-9]"
+                                style="background-color: transparent; border: none; font-weight: bolder; cursor: pointer">
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <label for="brightness-3" style="font-weight: bolder;">Яркость:</label>
+                            <input type="range" id="brightness-3"
+                                style="background-color: transparent; border: none; font-weight: bolder; cursor: pointer">
+                            <p style="margin: 0px; padding: 0px; font-weight: bolder;"><span
+                                    id="brightness-3-value">50</span>%</p>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin: 5px;">
+                            <button id="submit-3" class="pure-button button-success">Подтвердить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="popup"
+        style="position: fixed; height: 100vh; width: 100vw; background-color: rgba(6, 6, 6, 0.8); top: 0; left: 0; z-index: 1000; display: none;">
+        <div style="display: flex; height: 100vh; justify-content: center; align-items: center;">
+            <div
+                style="border: 1px solid #CCC; background-color: #F9F9F9; border-radius: 5px; min-width: 800px; height: 600px; padding-bottom: 10px;">
+                <header style="display: flex; justify-content: right;">
+                    <button id="close-popup"
+                        style="background: none; border: none; cursor: pointer; padding: 10px;">&#10060;</button>
+                </header>
+                <div
+                    style="display: flex; flex-direction: column; gap: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 0;">
+                    <div class="pure-g"
+                        style="display: flex; flex-direction: row; width: 100%; justify-content: center; margin: 0; padding: 0; text-align: left; align-items: center;">
+                        <div class="pure-u-1-4">
+                            <p style="font-weight: bolder; margin: 0;">Имя</p>
+                        </div>
+                        <div class="pure-u-1-6">
+                            <p style="font-weight: bolder; margin: 0;">Время<br>включения</p>
+                        </div>
+                        <div class="pure-u-1-6">
+                            <p style="font-weight: bolder; margin: 0;">Время<br>выключения</p>
+                        </div>
+                        <div class="pure-u-1-6">
+                            <p style="font-weight: bolder; margin: 0;">Яркость</p>
+                        </div>
+                        <div class="pure-u-1-6"></div>
+                    </div>
+                    <hr width="100%" style="margin: 0; padding: 0;">
+
+                    <div id="templates-list"
+                        style="display: flex; flex-direction: column; gap: 10px; height: 500px; overflow: auto;">
+                        <div id="template" class="pure-g"
+                            style="display: flex; flex-direction: row; width: 100%; justify-content: center; margin: 0; padding: 0; text-align: left; align-items: center; display: none;">
+                            <div class="pure-u-1-4">
+                                <p style="font-weight: bolder; margin: 0;">Template</p>
+                            </div>
+                            <div class="pure-u-1-6">
+                                <p style="font-weight: bolder; margin: 0;">00:00</p>
+                            </div>
+                            <div class="pure-u-1-6">
+                                <p style="font-weight: bolder; margin: 0;">00:00</p>
+                            </div>
+                            <div class="pure-u-1-6">
+                                <p style="font-weight: bolder; margin: 0;">100%</p>
+                            </div>
+                            <div class="pure-u-1-6" style="display: flex; flex-direction: row;">
+                                <button class="pure-button button-secondary">Применить</button>
+                                <img src="/img/trash.svg" width="25px" height="auto"
+                                    style="margin-left: 10px; cursor: pointer;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <script type="module" src="/scripts/main.js"></script>
+    <script type="module" src="/scripts/sockets.js"></script>
+    <script type="module" src="/scripts/utils.js"></script>
+</body>
+
+</html>
